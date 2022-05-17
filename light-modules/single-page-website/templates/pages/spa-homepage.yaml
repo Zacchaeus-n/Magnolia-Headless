@@ -1,0 +1,20 @@
+title: Human Relationships
+templateScript: /single-page-website/templates/pages/spa-homepage.ftl
+dialog: single-page-website:pages/spa-homepage
+renderType: freemarker
+visible: true
+areas:
+  main:
+    availableComponents:
+      section:
+        id: single-page-website:components/section
+      banner:
+        id: single-page-website:components/banner
+      test:
+        id: single-page-website:components/test
+  footer:
+    availableComponents:
+      mtkTextImage:
+        id: mtk2:components/textImage
+    templateScript: /single-page-website/templates/pages/areas/footerArea.ftl
+    maxComponents: 3

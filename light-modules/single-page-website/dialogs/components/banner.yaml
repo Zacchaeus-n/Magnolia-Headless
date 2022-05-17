@@ -1,0 +1,20 @@
+form:
+  label: banner
+  tabs:
+    - name: tabMain
+      label: Main
+      fields:
+
+        - !include /single-page-website/includes/dialogs/imageLinkField.yaml
+
+        - name: tagline
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Tagline
+          description: Define a Tagline for the Banner.
+          rows: 3
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

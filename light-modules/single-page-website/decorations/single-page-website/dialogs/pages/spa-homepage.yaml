@@ -1,0 +1,6 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: imageLink
+          required: false

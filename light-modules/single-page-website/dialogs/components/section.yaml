@@ -1,0 +1,47 @@
+form:
+  label: section
+  tabs:
+    - name: tabMain
+      label: Main
+      fields:
+
+        - name: navigationTitle
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Navigation Title
+          description: Used for the Navigation. If not defined, the Page Title will be used.
+
+        - name: headline
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Headline
+          required: true
+          description: Define a Headline for the Section. The Headline is also the fallback value of the Navigation Title.
+
+        - name: subHeadline
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Sub-Headline
+          description: Define a Sub-Headline for the Section. Text will be displayed right below the Headline and in smaller font.
+
+        - name: text
+          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+          label: Text
+          description: Add longer texts to the Section. Texts will be in rich text format.
+
+        - !include /single-page-website/includes/dialogs/imageLinkField.yaml
+
+        - name: textPosition
+          class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
+          label: Text Position
+          description: Choose whether the text should be positioned to the left or to the right.
+          options:
+            - name: left
+              value: left
+              label: Left
+            - name: right
+              value: right
+              label: Right
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

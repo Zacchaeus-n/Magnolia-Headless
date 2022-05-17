@@ -1,0 +1,29 @@
+form:
+  label: Page properties
+  tabs:
+    - name: tabMain
+      label: singlepage
+      fields:
+        - name: navigationTitle
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Navigation Title
+          description: Used for the Navigation. If not defined, the Page Title will be used.
+
+        - name: title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Page Title
+          description: Define the Page's title. The Page Title is also the fallback value of the Navigation Title.
+          required: true
+
+        - name: abstract
+          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+          label: Abstract
+          description: Add an Abstract of the Page.
+
+        - !include /single-page-website/includes/dialogs/imageLinkField.yaml
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

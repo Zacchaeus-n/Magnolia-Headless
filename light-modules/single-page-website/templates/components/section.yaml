@@ -1,0 +1,4 @@
+title: section
+renderType: freemarker
+templateScript: /single-page-website/templates/components/section.ftl
+dialog: single-page-website:components/section

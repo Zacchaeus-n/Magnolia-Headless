@@ -1,0 +1,4 @@
+title: test
+renderType: freemarker
+templateScript: /single-page-website/templates/components/test.ftl
+dialog: single-page-website:components/test
